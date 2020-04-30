@@ -1,0 +1,80 @@
+.service-item {
+  overflow: hidden;
+  border-radius: rem-calc(35px);
+  background: #fff;
+  box-shadow: 0 0 50px rgba(0, 0, 0, 0.16);
+  text-align: center;
+  font-weight: 300;
+  font-size: rem-calc(18px);
+  line-height: 1.22222222;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: rem-calc(37px 24px 35px);
+
+  @include media('>=tablet') {
+    font-size: rem-calc(22px);
+    line-height: 1.36363636;
+    border-radius: rem-calc(55px);
+  }
+
+  @include media('>=desktop') {
+    padding: rem-calc(48px 60px 39px);
+  }
+
+  h3 {
+    font-size: rem-calc(28px);
+    line-height: 1;
+    height: rem-calc(56px);
+    overflow: hidden;
+    margin-bottom: rem-calc(10px);
+
+    @include media('>=tablet') {
+      font-size: rem-calc(38px);
+      line-height: rem-calc(40px);
+      height: rem-calc(80px);
+      margin-bottom: rem-calc(18px);
+    }
+  }
+
+  .ico-wrap {
+    width: rem-calc(125px);
+    margin: 0 auto rem-calc(26px);
+
+    @include media('>=tablet') {
+      width: rem-calc(140px);
+      min-height: rem-calc(160px);
+      margin-bottom: rem-calc(25px);
+    }
+
+    @include media('>=desktop') {
+      width: rem-calc(177px);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  p {
+    margin-bottom: rem-calc(13px);
+
+    @include media('>=tablet') {
+      margin-bottom: rem-calc(7px);
+    }
+  }
+
+  .link {
+    align-self: center;
+    margin: auto auto 0;
+    font-weight: 700;
+    font-size: rem-calc(18px);
+    line-height: 1.05555556;
+    text-decoration: none;
+
+    @include media('>=tablet') {
+      font-size: rem-calc(26px);
+      line-height: 1.07692308;
+    }
+  }
+}

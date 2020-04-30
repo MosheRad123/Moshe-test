@@ -1,0 +1,79 @@
+.search-form {
+  position: relative;
+
+  &.desktop {
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+
+  &.mobile {
+    @include media('>=tablet') {
+      display: none;
+    }
+  }
+
+  .search-input {
+    height: calc(#{rem-calc(42px)} + 2px);
+    border-radius: rem-calc(30px);
+    background: #fff;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.08);
+    color: #260404;
+    font-size: rem-calc(16px);
+    text-align: right;
+    line-height: 1.5;
+    padding: rem-calc(9px 22px);
+    display: block;
+    width: 100%;
+    margin: 0;
+
+
+    @include media('>=tablet') {
+      height: calc(#{rem-calc(56px)} + 2px);
+      border-radius: rem-calc(22px);
+      font-size: rem-calc(20px);
+      padding: rem-calc(13px 30px);
+    }
+
+    @include placeholder {
+      color: #ACACAC;
+    }
+  }
+
+  .btn-search {
+    display: block;
+    border: 1px solid #FF736E;
+    background: #FF736E;
+    height: calc(#{rem-calc(42px)} + 2px);
+    border-radius: rem-calc(22px);
+    font-size: rem-calc(16px);
+    text-align: center;
+    line-height: 1;
+    padding: rem-calc(13px 9px);
+    color: #fff;
+    font-weight: 700;
+    width: rem-calc(66px);
+    transition: 0.3s ease border, 0.3s ease background;
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    @include media('>=tablet') {
+      height: calc(#{rem-calc(56px)} + 2px);
+      border-radius: rem-calc(22px);
+      font-size: rem-calc(20px);
+      padding: rem-calc(18px 13px);
+      width: rem-calc(87px);
+    }
+
+    i {
+      display: block;
+    }
+
+    &:hover {
+      border-color: #072053;
+      background: #072053;
+    }
+  }
+}

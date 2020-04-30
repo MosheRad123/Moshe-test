@@ -1,0 +1,134 @@
+.single-service-container {
+  padding: 0.25rem 0 1.625rem; }
+  @media (min-width: 768px) {
+    .single-service-container {
+      padding: 1.875rem 0 0.625rem; } }
+  @media (min-width: 1024px) {
+    .single-service-container {
+      padding: 3.375rem 0 0.8125rem; } }
+  .single-service-container .service-banner {
+    padding: 2.1875rem 0;
+    margin: 0 0 0.875rem; }
+    @media (min-width: 768px) {
+      .single-service-container .service-banner {
+        margin-bottom: 3.125rem;
+        padding: 0.25rem 0;
+        margin-bottom: 3.125rem; } }
+    @media (min-width: 1024px) {
+      .single-service-container .service-banner {
+        margin-bottom: 4.1875rem; } }
+    @media (max-width: 767px) {
+      .single-service-container .service-banner {
+        margin-left: -5.9375rem;
+        margin-right: -3.5rem; } }
+  .single-service-container h1 {
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 1.125;
+    text-align: center;
+    color: #260404;
+    margin-bottom: 1.9375rem; }
+    @media (min-width: 768px) {
+      .single-service-container h1 {
+        font-size: 4.875rem;
+        line-height: 0.75641026;
+        margin-bottom: 2.8125rem; } }
+    @media (min-width: 1024px) {
+      .single-service-container h1 {
+        margin-bottom: 3.75rem; } }
+  @media (min-width: 768px) {
+    .single-service-container .content-row {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      margin: 0 auto;
+      max-width: 1449px;
+      padding-top: 2.375rem; } }
+  .single-service-container .content {
+    font-size: 1.375rem;
+    line-height: 1.36363636; }
+    @media (min-width: 768px) {
+      .single-service-container .content {
+        font-size: 1.625rem;
+        line-height: 1.15384615;
+        font-weight: 300;
+        -ms-flex-preferred-size: calc(100% - 27.9375rem);
+            flex-basis: calc(100% - 27.9375rem);
+        max-width: calc(100% - 27.9375rem);
+        padding-left: 6.25rem; } }
+    @media (min-width: 1024px) {
+      .single-service-container .content {
+        padding-left: 14.125rem; } }
+    @media (max-width: 767px) {
+      .single-service-container .content {
+        padding-bottom: 1.8125rem; } }
+    .single-service-container .content p {
+      margin-bottom: 1.875rem; }
+  @media (min-width: 768px) {
+    .single-service-container .sidebar {
+      -ms-flex-preferred-size: 27.9375rem;
+          flex-basis: 27.9375rem;
+      max-width: 27.9375rem;
+      padding-top: 1.25rem; } }
+  .single-service-container .sidebar .sidebar-title {
+    text-align: center;
+    font-size: 2.5rem;
+    line-height: 1.125;
+    color: #260404;
+    font-weight: 700;
+    margin-bottom: 1.75rem; }
+    @media (min-width: 768px) {
+      .single-service-container .sidebar .sidebar-title {
+        margin-bottom: 1.75rem; } }
+    @media (min-width: 1024px) {
+      .single-service-container .sidebar .sidebar-title {
+        margin-bottom: 2.375rem; } }
+
+.service-item {
+  overflow: hidden;
+  background: #F7F7FC;
+  border-radius: 1.75rem;
+  margin: 0 0 1.5625rem;
+  min-height: 15.3125rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 1.5625rem 1rem 0.9375rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (min-width: 768px) {
+    .service-item {
+      margin-bottom: 2.3125rem;
+      min-height: 19.0625rem;
+      padding: 1.25rem; } }
+  .service-item .img-wrap {
+    max-width: 16.25rem;
+    margin: 0 auto 1.125rem; }
+    @media (min-width: 768px) {
+      .service-item .img-wrap {
+        max-width: 16.875rem;
+        margin-bottom: 1.125rem; } }
+    .service-item .img-wrap img {
+      width: 100%; }
+  .service-item .service-title {
+    text-align: center;
+    font-weight: 700;
+    font-size: 1.625rem;
+    color: #260404;
+    line-height: 1.26923077;
+    margin: 0;
+    text-transform: uppercase; }
+    @media (min-width: 768px) {
+      .service-item .service-title {
+        font-size: 1.75rem;
+        line-height: 1.17857143; } }
+    .service-item .service-title a {
+      color: #260404;
+      text-decoration: none; }

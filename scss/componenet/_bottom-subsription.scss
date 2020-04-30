@@ -1,0 +1,102 @@
+.bottom-newsletter {
+  border-radius: rem-calc(45px 45px) 0 0;
+  background: linear-gradient(#ea6667 0%, #d94e62 55.24%, #b21555 100%);
+  color: #fff;
+  text-align: center;
+  position: relative;
+  padding: rem-calc(61px 0 90px);
+
+  @include media('>=tablet') {
+    border-radius: rem-calc(102px) rem-calc(102px) 0 0;
+    background: linear-gradient(#ea6667 0%, #b21555 100%);
+    margin: rem-calc(70px) 0 0;
+    padding: rem-calc(68px) 0;
+  }
+
+  @include media('>=desktop') {
+    padding: rem-calc(84px 0 83px);
+  }
+
+  .bg-right {
+    position: absolute;
+    top: rem-calc(130px);
+    right: 0;
+    width: rem-calc(400px);
+
+    @include media('>=tablet') {
+      right: rem-calc(143px);
+      top: rem-calc(71px);
+      width: rem-calc(509px);
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+
+  .container {
+    position: relative;
+    z-index: 3;
+  }
+
+  .man-image {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: rem-calc(400px);
+
+    @include media('>=tablet') {
+      bottom: rem-calc(-68px);
+      left: rem-calc(-50px);
+    }
+
+    @include media('>=desktop') {
+      bottom: rem-calc(-83px);
+      left: rem-calc(126px);
+      width: rem-calc(448px);
+    }
+
+    @include media('<tablet') {
+      display: none;
+    }
+  }
+
+  .section-title {
+    margin-bottom: rem-calc(37px);
+
+    @include media('>=tablet') {
+      margin-bottom: rem-calc(34px);
+    }
+  }
+
+  .text {
+    font-size: rem-calc(22px);
+    line-height: 1.27272727;
+    font-weight: 500;
+    margin: 0 0 rem-calc(27px);
+
+    @include media('>=tablet') {
+      font-size: rem-calc(26px);
+      line-height: 1.26923077;
+      max-width: rem-calc(668px);
+      margin: 0 auto rem-calc(67px);
+    }
+  }
+
+  .subscription-form {
+    @include media('>=tablet') {
+      max-width: rem-calc(642px);
+      margin: 0 auto;
+    }
+
+    .btn {
+      border-color: #072053;
+      background: #072053;
+
+      &:hover {
+        background: $hover-color;
+        border-color: $hover-color;
+      }
+    }
+  }
+}

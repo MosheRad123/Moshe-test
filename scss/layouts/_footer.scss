@@ -1,0 +1,163 @@
+#footer {
+  background: #072053;
+  color: #fff;
+  padding: rem-calc(52px) 0;
+
+  @include media('>=tablet') {
+    padding: rem-calc(60px 0 30px);
+  }
+
+  @include media('>=desktop') {
+    padding: rem-calc(89px 0 66px);
+  }
+}
+
+.footer-top {
+  position: relative;
+
+  @include media('>=tablet') {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+    padding-bottom: 7.8125vw;
+  }
+
+  @include media('>=wxl') {
+    padding-bottom: 150px;
+  }
+
+  .social-networks {
+    justify-content: center;
+
+    @include media('<tablet') {
+      padding: rem-calc(35px 0 36px);
+    }
+
+    @include media('>=tablet') {
+      position: absolute;
+      top: rem-calc(8px);
+      right: 50%;
+      transform: translate(50%,0);
+    }
+
+    a {
+      color: #fff;
+
+      &:hover {
+        color: $hover-color;
+      }
+    }
+  }
+}
+
+.footer-logo {
+  width: rem-calc(134px);
+
+  @include media('>=tablet') {
+    width: rem-calc(149px);
+  }
+
+  @include media('<tablet') {
+    margin: 0 auto rem-calc(34px);
+  }
+
+  img {
+    width: 100%;
+  }
+}
+
+.footer-nav {
+  @include media('<tablet') {
+    text-align: center;
+  }
+
+  @include media('>=tablet') {
+    margin-left: auto;
+    padding: rem-calc(3px) 0;
+  }
+
+  ul {
+    @extend %listreset;
+    font-weight: 500;
+    font-size: rem-calc(18px);
+    line-height: 1.5;
+
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      font-size: rem-calc(22px);
+    }
+
+    >li {
+      padding: 0 0 rem-calc(14px);
+
+      @include media('>=tablet') {
+        padding: 0 0 0 rem-calc(30px);
+      }
+
+      @include media('>=desktop') {
+        padding-left: rem-calc(40px);
+      }
+
+      >a {
+        text-decoration: none;
+        color: #fff;
+
+        &:hover {
+          color: $hover-color;
+        }
+      }
+    }
+  }
+}
+
+.social-networks {
+  @extend %listreset;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row-reverse;
+
+  >li {
+    padding: 0 rem-calc(9px);
+
+    @include media('>=tablet') {
+      padding: 0 rem-calc(12px);
+    }
+
+    >a {
+      text-decoration: none;
+      font-size: rem-calc(20px);
+      line-height: 1;
+      transition: 0.25s ease color;
+
+      @include media('>=tablet') {
+        font-size: rem-calc(26px);
+      }
+
+      i {
+        display: block;
+      }
+
+      .icon-instagram {
+        font-size: rem-calc(23px);
+
+        @include media('>=tablet') {
+          font-size: rem-calc(30px);
+        }
+      }
+    }
+  }
+}
+
+.footer-bottom {
+  font: #{rem-calc(14px)}/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;
+  text-align: center;
+  border-top: 1px solid $white;
+  padding: rem-calc(24px 0);
+
+  @include media('>=tablet') {
+    font-size: rem-calc(20px);
+    padding: rem-calc(52px) 0;
+  }
+}

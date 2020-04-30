@@ -1,0 +1,116 @@
+@import 'starter';
+
+@import 'componenet/search';
+@import 'componenet/blog-nav';
+@import 'componenet/blog-item';
+
+.blogs-container {
+  padding: rem-calc(4px) 0 rem-calc(50px);
+
+  @include media('>=tablet') {
+    padding: rem-calc(30px) 0 rem-calc(70px);
+  }
+
+  @include media('>=desktop') {
+    padding: rem-calc(54px) 0 rem-calc(109px);
+  }
+
+  .blogs-header {
+    color: #260404;
+    font-size: rem-calc(22px);
+    line-height: 1.36363636;
+    padding: rem-calc(28px) 0 rem-calc(51px);
+
+    @include media('>=tablet') {
+      font-size: rem-calc(26px);
+      line-height: 1.15384615;
+      padding: rem-calc(17px 0 66px);
+    }
+
+    @include media('>=desktop') {
+      display: flex;
+      flex-wrap: wrap;
+      font-weight: 300;
+      align-items: flex-start;
+    }
+
+    @include media('<desktop') {
+      text-align: center;
+    }
+
+    .text-wrap {
+      @include media('>=desktop') {
+        flex-basis: calc(100% - #{rem-calc(453px)});
+        max-width: rem-calc(708px);
+        padding-left: rem-calc(40px);
+      }
+
+      p {
+        margin: 0;
+      }
+    }
+
+    .search-form {
+      max-width: rem-calc(453px);
+      margin: 0 auto;
+
+      @include media('>=desktop') {
+        margin: auto auto rem-calc(3px) 0;
+        flex-basis: rem-calc(453px);
+      }
+    }
+  }
+
+  h1 {
+    font-size: rem-calc(40px);
+    line-height: 1.125;
+    font-weight: 700;
+    color: #260404;
+    margin-bottom: rem-calc(6px);
+
+    @include media('>=tablet') {
+      font-size: rem-calc(50px);
+      line-height: 1.18;
+      margin-bottom: rem-calc(21px);
+    }
+  }
+
+  .news-row {
+    // margin: 0 0 0 rem-calc(-33px);
+    padding-bottom: rem-calc(30px);
+
+    @include media('>=tablet') {
+      display: flex;
+      flex-wrap: wrap;
+      margin: 0 rem-calc(-25px);
+      padding-bottom: rem-calc(50px);
+    }
+
+    @include media('>=desktop') {
+      margin: 0 rem-calc(-40px);
+      padding-bottom: rem-calc(71px);
+    }
+  }
+
+  .news-col {
+    @include media('>=tablet') {
+      flex-basis: 33.33%;
+      max-width: 33.33%;
+      padding: rem-calc(0 25px 45px);
+    }
+
+    @include media('>=desktop') {
+      padding-left: rem-calc(40px);
+      padding-right: rem-calc(40px);
+      padding-bottom: rem-calc(67px);
+    }
+
+    @include media('<tablet') {
+      // width: rem-calc(352px);
+
+      .news-item {
+        margin: 0 rem-calc(11px 32px);
+      }
+    }
+  }
+}

@@ -1,0 +1,74 @@
+.subscription-form {
+  position: relative;
+
+  .input-text {
+    height: calc(#{rem-calc(58px)} + 2px);
+    border-radius: rem-calc(30px);
+    background: #fff;
+    border: 1px solid #d9d8d8;
+    box-shadow: 0 2px 18px rgba(0, 0, 0, 0.09);
+    color: #260404;
+    font-size: rem-calc(22px);
+    text-align: center;
+    line-height: 1.45454545;
+    padding: rem-calc(13px);
+    margin: 0 0 rem-calc(13px);
+    display: block;
+    width: 100%;
+
+    @include media('>=tablet') {
+      text-align: left;
+      height: calc(#{rem-calc(85px)} + 2px);
+      border-radius: rem-calc(43px);
+      font-size: rem-calc(20px);
+      line-height: 1.75;
+      padding: rem-calc(25px 47px);
+      font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    }
+
+    @include media('>=desktop') {
+      padding-right: rem-calc(240px);
+      margin: 0;
+    }
+
+    @include placeholder {
+      color: #ACACAC;
+    }
+  }
+
+  .btn {
+    display: block;
+    border: 1px solid #FF6761;
+    background: #FF6761;
+    height: calc(#{rem-calc(58px)} + 2px);
+    border-radius: rem-calc(30px);
+    font-size: rem-calc(22px);
+    text-align: center;
+    line-height: 1.45454545;
+    padding: rem-calc(13px);
+    color: #fff;
+    font-weight: 700;
+    width: 100%;
+    transition: 0.3s ease border, 0.3s ease background;
+
+    @include media('>=tablet') {
+      height: calc(#{rem-calc(85px)} + 2px);
+      border-radius: rem-calc(43px);
+      font-size: rem-calc(26px);
+      line-height: 1.34615385;
+      padding: rem-calc(25px);
+    }
+
+    @include media('>=desktop') {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: rem-calc(237px);
+    }
+
+    &:hover {
+      border-color: #072053;
+      background: #072053;
+    }
+  }
+}

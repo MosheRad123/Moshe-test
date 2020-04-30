@@ -1,0 +1,60 @@
+html {
+	box-sizing: border-box;
+	font-family: sans-serif;
+	-ms-text-size-adjust: 100%;
+	-webkit-text-size-adjust: 100%;
+	font-size: 3.8647343vw;
+
+	@include media('>=tablet') {
+		font-size: 10px;
+	}
+
+	@include media('>=desktop') {
+		font-size: 0.952381vw;
+	}
+
+	@include media('>=tvscreen') {
+		font-size: 16px;
+	}
+}
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+
+body {
+	margin: 0;
+	color: $base-text-color;
+	background: $base-background-color;
+	font: #{$font-size-base}/#{$line-height-base} $base-font-family;
+	min-width: $base-min-width;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+
+	&.rtl {
+		direction: rtl;
+	}
+}
+
+// adaptive images
+img {
+	max-width: 100%;
+	height: auto;
+	vertical-align: top;
+}
+
+// google map fix
+.gm-style img {max-width: none}
+
+// HTML5 display definitions
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+nav,
+section {
+	display: block;
+}

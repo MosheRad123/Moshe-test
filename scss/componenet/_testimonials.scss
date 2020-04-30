@@ -1,0 +1,178 @@
+.testimonials-section {
+  margin-bottom: rem-calc(10px);
+
+  @include media('>=tablet') {
+    margin-bottom: rem-calc(30px);
+  }
+
+  .section-title {
+    margin-bottom: rem-calc(14px);
+
+    @include media('>=tablet') {
+      margin-bottom: rem-calc(21px);
+    }
+  }
+
+  .testimonials-box {
+    background: rgba(#f7f7fc,0.5) url(../images/bg-testimonial-small.svg) 100% #{calc(100% - #{rem-calc(59px)})}/#{rem-calc(525px)} auto no-repeat;
+    border-radius: rem-calc(45px 45px) 0 0;
+    padding: rem-calc(38px 40px 31px);
+
+    @include media('>=tablet') {
+      border-radius: rem-calc(102px);
+      background-image: url(../images/bg-testimonial.svg);
+      background-size: 100% auto;
+      background-position: 0 0;
+      padding: 104px 0 50px;
+    }
+
+    @include media('>=desktop') {
+      padding: rem-calc(104px 101px 50px);
+    }
+
+    @include media('<tablet') {
+      margin-left: rem-calc(-32px);
+      margin-right: rem-calc(-32px);
+    }
+  }
+
+  .testimonial-slider {
+    position: relative;
+
+    @include media('>=tablet') {
+      padding: 0 rem-calc(75px);
+    }
+
+    >.slide {
+      + .slide {
+        display: none;
+      }
+    }
+
+    .slick-arrow {
+      position: absolute;
+      bottom: rem-calc(254px);
+      border: none;
+      outline: none;
+      padding: 0;
+      margin: 0;
+      background: none;
+      color: #707070;
+      z-index: 6;
+      transition: 0.25s ease color;
+      line-height: 1;
+      font-size: rem-calc(15px);
+
+      &:hover {
+        color: #000;
+      }
+    }
+
+    .slick-prev {
+      right: 0;
+    }
+
+    .slick-next {
+      left: 0;
+    }
+
+    .slick-dots {
+      @extend %listreset;
+      font-size: 0;
+      text-align: center;
+      padding: rem-calc(7px) 0 0;
+
+      @include media('>=tablet') {
+        position: absolute;
+        bottom: rem-calc(228px);
+        left: 0;
+        right: 0;
+      }
+
+      li {
+        display: inline-block;
+        vertical-align: top;
+        margin: 0 rem-calc(6.5px);
+      }
+
+      .slick-active {
+        button {
+          margin-top: 0;
+          width: calc(#{rem-calc(8px)} + 2px);
+          height: calc(#{rem-calc(8px)} + 2px);
+          background: #FF6761;
+        }
+      }
+
+      button {
+        border: none;
+        outline: none;
+        width: rem-calc(8px);
+        height: rem-calc(8px);
+        background: #EBEBEB;
+        border-radius: 50%;
+        font-size: 0;
+        padding: 0;
+        margin: 1px 0 0;
+        transition: 0.8s ease background;
+
+        &:hover {
+          background: #FF6761;
+        }
+      }
+    }
+  }
+}
+
+.testimonial-item {
+  text-align: center;
+  font-size: rem-calc(22px);
+  line-height: 1.27272727;
+
+  @include media('>=tablet') {
+    font-size: rem-calc(26px);
+    line-height: 1.15384615;
+    max-width: rem-calc(945px);
+    margin: 0 auto;
+  }
+
+  .img-wrap {
+    display: block;
+    margin: 0 auto rem-calc(16px);
+    overflow: hidden;
+    width: rem-calc(126px);
+
+    @include media('>=tablet') {
+      width: rem-calc(126px);
+    }
+  }
+
+  .name {
+    display: block;
+    font-weight: 700;
+
+    @include media('>=tablet') {
+      font-size: rem-calc(22px);
+      line-height: 1.36363636;
+    }
+  }
+
+  .role {
+    display: block;
+    font-size: rem-calc(20px);
+    line-height: 1.5;
+    font-weight: 300;
+
+    @include media('>=tablet') {
+      line-height: 1.2;
+    }
+  }
+
+  .author-info {
+    padding: rem-calc(26px) 0 0;
+
+    @include media('>=tablet') {
+      padding-top: rem-calc(56px);
+    }
+  }
+}

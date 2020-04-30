@@ -1,0 +1,90 @@
+.hero-banner {
+  position: relative;
+  padding: rem-calc(37px 0 148px);
+
+  @include media('>=tablet') {
+    padding: rem-calc(139px) 0;
+    min-height: rem-calc(570px);
+  }
+
+  @include media('>=desktop') {
+    padding: rem-calc(232px) 0;
+    min-height: rem-calc(950px);
+  }
+
+  @include media('<tablet') {
+    text-align: center;
+
+    h1 {
+      margin-left: rem-calc(-5px);
+      margin-right: rem-calc(-5px);
+    }
+  }
+
+  .text-box {
+    position: relative;
+    z-index: 3;
+    font-size: rem-calc(22px);
+    line-height: 1.36363636;
+
+    @include media('>=tablet') {
+      font-weight: 300;
+      font-size: rem-calc(28px);
+      line-height: 1.14285714;
+      width: 56%;
+    }
+
+    @include media('>=desktop') {
+      width: 40.2%;
+    }
+  }
+
+  h1 {
+    font-weight: 700;
+    font-size: rem-calc(40px);
+    line-height: 1.125;
+    margin-bottom: rem-calc(11px);
+
+    @include media('>=tablet') {
+      font-size: rem-calc(71px);
+      line-height: 0.91549296;
+      margin-bottom: rem-calc(15px);
+      margin-left: rem-calc(-30px);
+    }
+  }
+
+  .text {
+    padding-bottom: rem-calc(185px);
+
+    @include media('>=tablet') {
+      padding-bottom: rem-calc(9px);
+    }
+  }
+
+  .img-wrap {
+    position: absolute;
+    right: 0;
+    width: rem-calc(378px);
+
+    @include media('>=tablet') {
+      right: auto;
+      left: 0;
+      width: 75%;
+      top: rem-calc(-60px);
+    }
+
+    @include media('>=desktop') {
+      left: rem-calc(61px);
+      width: 69.791667%;
+      top: rem-calc(-119px);
+    }
+
+    @include media('<tablet') {
+      bottom: 0;
+    }
+
+    img {
+      width: 100%;
+    }
+  }
+}
